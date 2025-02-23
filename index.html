@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>🐾 Animal Explorer 🐾</h1>
+  
+  <div class="form-section">
+  
+   
+    
+    <h3>➕ Add/Edit Animal</h3>
+    <form id="animal-form">
+      <input type="hidden" id="edit-index" />
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="Big Cats">Big Cats</option>
+        <option value="Dogs">Dogs</option>
+        <option value="Big Fish">Big Fish</option>
+      </select><br/>
+      <label for="species">Species:</label>
+      <input type="text" id="species" placeholder="Enter Species" required /><br/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter Name" required /><br/>
+      <label for="size">Size:</label>
+      <input type="text" id="size" placeholder="Enter Size" required /><br/>
+      <label for="location">Location:</label>
+      <input type="text" id="location" placeholder="Enter Location" required /><br/>
+      <label for="image">Image URL:</label>
+      <input type="url" id="image" placeholder="Enter Image URL" required /><br/>
+      <button type="submit">🚀 Submit</button>
+    </form>
+     
+    <label for="sort-by">Sort by:</label>
+    <select id="sort-by">
+      <option value="name">Name</option>
+      <option value="size">Size</option>
+      <option value="location">Location</option>    
+    </select>
+  </div>
+
+  <div id="animal-tables"></div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
